@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="vopros">Каких два языка программирования используются для разработки Android? \n\n A) Kotlin и Java \n\n B) Java и Python \n\n C) Kotlin и Python</string>
+    <string name="quest">ВОПРОС</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="quiz">Quiz</string>
+    <string name="image">Image</string>
+    <string name="link">Link</string>
+    <string name="random">Random</string>
+    <string name="developer">Разработчик приложения</string>
+    <string name="github">GitHub</string>
+    <string name="about">Обо мне</string>
+    <string name="about_me">About</string>
+</resources>
