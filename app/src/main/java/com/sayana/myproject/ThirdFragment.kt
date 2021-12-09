@@ -16,9 +16,6 @@ import org.w3c.dom.Text
 
 class ThirdFragment : Fragment() {
 
-
-
-
     lateinit var devRecyclerView: RecyclerView
     lateinit var devButton: Button
 
