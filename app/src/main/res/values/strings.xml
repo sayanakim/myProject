@@ -7,10 +7,10 @@
     <string name="c">C</string>
     <string name="quiz">Quiz</string>
     <string name="image">Image</string>
-    <string name="link">Link</string>
+    <string name="dev">Разработчики</string>
+    <string name="github">GITHUB</string>
+    <string name="github2">GitHub</string>
     <string name="random">Random</string>
-    <string name="developer">Разработчик приложения</string>
-    <string name="github">GitHub</string>
-    <string name="about">Обо мне</string>
-    <string name="about_me">About</string>
+    <string name="developers">Developers</string>
+    <string name="github1">GitHub</string>
 </resources>

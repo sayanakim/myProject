@@ -4,8 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class DevAdapter(private val devAbout: List<String>) :
-    RecyclerView.Adapter<DevViewHolder>() {
+class DevAdapter(private val developers: List<String>) : RecyclerView.Adapter<DevViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DevViewHolder {
         val itemView = LayoutInflater.from(parent.context)
@@ -14,11 +13,12 @@ class DevAdapter(private val devAbout: List<String>) :
     }
 
     override fun onBindViewHolder(holder: DevViewHolder, position: Int) {
-        val about = devAbout[position]
-        holder.bind(about)
+        val dev = developers[position]
+        holder.bind(dev)
     }
 
+    // возвращает общее кол-во элементов списка
     override fun getItemCount(): Int {
-        return devAbout.size
+        return developers.size
     }
 }

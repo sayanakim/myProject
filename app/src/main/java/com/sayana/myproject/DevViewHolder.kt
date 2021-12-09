@@ -1,15 +1,19 @@
 package com.sayana.myproject
 
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class DevViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView) {
 
-    private val devAboutTextView: TextView =
-        itemView.findViewById(R.id.dev_about_text_view)
+    private val nameTextView: TextView =
+        itemView.findViewById(R.id.name_text_view)
+//    private val devButton: Button =
+//        itemView.findViewById(R.id.dev_button)
 
     fun bind(name: String) {
-        devAboutTextView.text = name
+        nameTextView.text = name
     }
+
 }

@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         }
         navMenu.selectedItemId =
             savedInstanceState?.getInt(ITEM) ?: R.id.fragment_first
+
+
     }
 
 

@@ -15,6 +15,6 @@
         android:id="@+id/fragment_third"
         android:enabled="true"
         android:icon="@drawable/link_icon"
-        android:title="@string/about_me"/>
+        android:title="@string/developers"/>
 
 </menu>
