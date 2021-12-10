@@ -26,60 +26,40 @@ class MainActivity : AppCompatActivity() {
 
             var fragment: Fragment? = null
 
-//                when (item.itemId) {
-//                    R.id.fragment_first -> {
-//                        fragment = if (savedInstanceState != null)
-//                            supportFragmentManager.getFragment(savedInstanceState, FIRST_FRAGMENT)
-//                        else FirstFragment()
-//
-//                    }
-//                    R.id.fragment_second -> {
-//                        fragment = if (savedInstanceState != null)
-//                            supportFragmentManager.getFragment(savedInstanceState, SECOND_FRAGMENT)
-//                        else SecondFragment()
-//                    }
-//                    R.id.fragment_third -> {
-//                        fragment = if (savedInstanceState != null)
-//                            supportFragmentManager.getFragment(savedInstanceState, THIRD_FRAGMENT)
-//                        else ThirdFragment()
-//                    }
-
-            if (savedInstanceState != null) {
-                when (item.itemId) {
-                    R.id.fragment_first -> {
-                        fragment = supportFragmentManager.getFragment(
-                            savedInstanceState, FIRST_FRAGMENT
-                        ) ?: FirstFragment()
-                    }
-                    R.id.fragment_second -> {
-                        fragment = supportFragmentManager.getFragment(
-                            savedInstanceState, SECOND_FRAGMENT
-                        ) ?: SecondFragment()
-                    }
-                    R.id.fragment_third -> {
-                        fragment = supportFragmentManager.getFragment(
-                            savedInstanceState, THIRD_FRAGMENT
-                        ) ?: ThirdFragment()
+                if (savedInstanceState != null) {
+                    when (item.itemId) {
+                        R.id.fragment_first -> {
+                            fragment = supportFragmentManager.getFragment(
+                                savedInstanceState, FIRST_FRAGMENT
+                            ) ?: FirstFragment()
+                        }
+                        R.id.fragment_second -> {
+                            fragment = supportFragmentManager.getFragment(
+                                savedInstanceState, SECOND_FRAGMENT
+                            ) ?: SecondFragment()
+                        }
+                        R.id.fragment_third -> {
+                            fragment = supportFragmentManager.getFragment(
+                                savedInstanceState, THIRD_FRAGMENT
+                            ) ?: ThirdFragment()
+                        }
                     }
                 }
-            }
-            else {
-                when (item.itemId) {
+                else {
+                    when (item.itemId) {
 
-                    R.id.fragment_first -> fragment = FirstFragment()
-                    R.id.fragment_second -> fragment = SecondFragment()
-                    R.id.fragment_third -> fragment = ThirdFragment()
+                        R.id.fragment_first -> fragment = FirstFragment()
+                        R.id.fragment_second -> fragment = SecondFragment()
+                        R.id.fragment_third -> fragment = ThirdFragment()
 
+                }
             }
+
+            replaceFragment(fragment!!)
+            true
         }
-
-        replaceFragment(fragment!!)
-        true
-    }
-    navMenu.selectedItemId =
-        savedInstanceState?.getInt(ITEM) ?: R.id.fragment_first
-
-
+        navMenu.selectedItemId =
+            savedInstanceState?.getInt(ITEM) ?: R.id.fragment_first
     }
 
 
